@@ -27,7 +27,8 @@ jobs:
         continue-on-error: true
         run: npm run test:coverage
 
-      - uses: tintef/nyc-reporter-action
+      - name: Publish coverage
+        uses: tintef/nyc-reporter-action
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPORTER: 'text' # defaults to 'text-summary'
