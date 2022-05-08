@@ -4,7 +4,7 @@
   "description": "Direct Play middleware.",
   "scripts": {
     "test": " ts-mocha  src/**/*.test.ts --timeout 10000 --exit",
-    "test:coverage": "nyc --reporter=html --reporter=text --reporter=text-summary npm run test"
+    "test:coverage": "nyc npm run test"
   },
   "nyc": {
     "extension": [
@@ -17,7 +17,9 @@
       "**/*.test.ts"
     ],
     "reporter": [
-      "html"
+      "html",
+      "text",
+      "text-summary"
     ],
     "all": true
   },
