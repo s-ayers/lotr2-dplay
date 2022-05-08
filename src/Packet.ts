@@ -36,9 +36,9 @@ export default class Packet {
         console.log(buf);
         console.log(this);
       }
-    } 
+    }
 
-    
+
   }
 
   public customCommands(buf: Buffer,) {
@@ -67,7 +67,7 @@ export default class Packet {
   }
 
   protected playCommands(buf: Buffer) {
-    console.log(this.action);
+    // console.log(this.action);
     if (typeof this["_" + this.action] === "function") {
       return this["_" + this.action]();
     }
@@ -90,7 +90,7 @@ export default class Packet {
         return new commands.RequestPlayerReply();
       case 8:
         return new commands.CreatePlayer();
- 
+
       case 11:
         return new commands.DeletePlayer();
 
