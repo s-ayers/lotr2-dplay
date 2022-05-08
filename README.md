@@ -1,2 +1,5 @@
 # lotr2-dplay
- Driect Player middleware for Lords of the Reams 2
+![test workflow](https://github.com/s-ayers/lotr2-dplay/actions/workflows/test.yml/badge.svg)
+
+Direct Play middleware for Lords of the Realms 2.
+
