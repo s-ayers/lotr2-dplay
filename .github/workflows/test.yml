@@ -27,5 +27,7 @@ jobs:
         continue-on-error: true
         run: npm run test:coverage
 
-      - name: Publish Unit Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v1.33
+      - uses: tintef/nyc-reporter-action
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPORTER: 'text' # defaults to 'text-summary'
