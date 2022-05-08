@@ -18,6 +18,7 @@
     ],
     "reporter": [
       "html",
+      "lcovonly",
       "text",
       "text-summary"
     ],

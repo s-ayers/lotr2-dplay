@@ -27,8 +27,7 @@ jobs:
         continue-on-error: true
         run: npm run test:coverage
 
-      - name: Publish coverage
-        uses: tintef/nyc-reporter-action
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPORTER: 'text' # defaults to 'text-summary'
+            token: ${{ secrets.CODECOV_TOKEN }}
