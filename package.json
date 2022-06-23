@@ -28,8 +28,11 @@
   "author": "Steve Ayers",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "binary-parser": "^2.0.2",
-    "bufferutil": "^4.0.1"
+    "binary-parser": "^2.1.0",
+    "bufferutil": "^4.0.1",
+    "chalk": "^4.1.2",
+    "ether-frame": "^0.2.0",
+    "pcap-ng-parser": "^1.0.0"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.3.3",
